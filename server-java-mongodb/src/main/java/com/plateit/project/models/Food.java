@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.annotation.Id;
 
-public class Food implements Item{
+public class Food extends Item{
 
 	@Id
 	private String id;
