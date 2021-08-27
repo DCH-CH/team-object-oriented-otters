@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.annotation.Id;
 
-public class Meal implements Item{
+public class Meal extends Item{
 
 	@Id 
 	public String id;
@@ -14,7 +14,7 @@ public class Meal implements Item{
 	public UnitType unitType;
 	public List <Item> Items;
 	public float price;
-	
+
 	public Meal() {
 		
 	}

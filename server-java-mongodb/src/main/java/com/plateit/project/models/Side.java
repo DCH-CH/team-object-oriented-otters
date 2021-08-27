@@ -2,7 +2,7 @@ package com.plateit.project.models;
 
 import org.springframework.data.annotation.Id;
 
-public class Side implements Item{
+public class Side extends Item{
 
 	@Id 
 	public String id;
