@@ -1,78 +1,43 @@
 package com.plateit.project.models;
 
+
 import java.util.List;
 
-import org.springframework.data.annotation.Id;
 
 public class Meal extends Item{
 
-	@Id 
-	public String id;
-	private Image picture;
-	public String name;
-	public String description;
-	public UnitType unitType;
-	public List <Item> Items;
-	public float price;
+	private List <Component> components;
+	private List <Side> sides;
+	private Beverage beverage;
+	
 
 	public Meal() {
 		
 	}
 
-	public String getId() {
-		return id;
+	public List<Component> getComponents() {
+		return components;
 	}
 
-	public void setId(String id) {
-		this.id = id;
-	}
-	
-	public Image getPicture() {
-		return picture;
-	}
-	public void setPicture(Image picture) {
-		this.picture = picture;
+	public void setComponents(List<Component> components) {
+		this.components = components;
 	}
 
-	public String getName() {
-		return name;
+	public List<Side> getSides() {
+		return sides;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
-	
-	public String getDescription() {
-		return description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
+	public void setSides(List<Side> sides) {
+		this.sides = sides;
 	}
 
-	public UnitType getUnitType() {
-		return unitType;
+	public Beverage getBeverage() {
+		return beverage;
 	}
 
-	public void setUnitType(UnitType unitType) {
-		this.unitType = unitType;
+	public void setBeverage(Beverage beverage) {
+		this.beverage = beverage;
 	}
-
-	public float getPrice() {
-		return price;
-	}
-
-	public void setPrice(float price) {
-		this.price = price;
-	}
-
-	public List<Item> getItems() {
-		return Items;
-	}
-
-	public void setItems(List<Item> items) {
-		Items = items;
-	}
-	
 	
 	
 }

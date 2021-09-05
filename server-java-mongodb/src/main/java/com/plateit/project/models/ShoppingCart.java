@@ -11,6 +11,7 @@ public class ShoppingCart {
 	private List<Item> items;
 	private Customer customer;
 	private ShoppingCartStatus shoppingCartStatus;
+
 	
 	public ShoppingCart() {
 		

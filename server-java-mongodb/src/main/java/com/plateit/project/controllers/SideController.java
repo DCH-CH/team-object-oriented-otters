@@ -65,7 +65,7 @@ public class SideController {
 	@PutMapping("/side")
 	public ResponseEntity<?> updateSide(@RequestBody Side side){
 
-		Side sideToUpdate = sideRepository.findById(side.id).orElse(null);
+		Side sideToUpdate = sideRepository.findById(side.getId()).orElse(null);
 
 		if (sideToUpdate != null) {
 			sideToUpdate = side;
