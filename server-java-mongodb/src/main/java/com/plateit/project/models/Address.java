@@ -2,6 +2,7 @@ package com.plateit.project.models;
 
 import org.springframework.data.annotation.Id;
 
+
 public class Address {
 	
 	@Id

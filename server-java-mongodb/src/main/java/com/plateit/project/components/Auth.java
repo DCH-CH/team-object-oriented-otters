@@ -17,7 +17,7 @@ public class Auth extends BasicAuthenticationEntryPoint {
     @Override
     public void commence(
       HttpServletRequest request, HttpServletResponse response, AuthenticationException authEx) 
-      throws IOException, ServletException {
+      throws IOException {
     	String r = "Basic realm=" + getRealmName() + "";
         response.addHeader("WWW-Authenticate", r);
         response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
@@ -26,7 +26,7 @@ public class Auth extends BasicAuthenticationEntryPoint {
     }
 
     @Override
-    public void afterPropertiesSet() throws Exception {
+    public void afterPropertiesSet() {
         setRealmName("Baeldung");
         super.afterPropertiesSet();
     }
