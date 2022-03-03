@@ -21,6 +21,7 @@ public class ImageServiceImplemantation implements ImageService{
 	
 	public Image uploadFileService(MultipartFile file) {
 		Image image = new Image();
+
 		try {
 			fileName = UUID.randomUUID();
 			String type = file.getContentType().substring(file.getContentType().indexOf('/')+1);
