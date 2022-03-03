@@ -56,10 +56,10 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 	  System.out.println("\n\nUnsuccessfull error\n\n\n"+ failed.getMessage());
 	  String message = failed.getMessage();
 	  String response = String.format("{'message':'%s'}", message);
-	  PrintWriter writer = new PrintWriter(res.getWriter());
-	  writer.write(response);
+//	  PrintWriter writer = new PrintWriter(res.getWriter());
+//	  writer.write(response);
 	  
-	  //super.unsuccessfulAuthentication(req, res, failed);
+	  super.unsuccessfulAuthentication(req, res, failed);
   }
 }
 

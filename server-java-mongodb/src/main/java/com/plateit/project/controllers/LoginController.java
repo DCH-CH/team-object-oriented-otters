@@ -70,11 +70,11 @@ public class LoginController {
 	}
 	
 	@PostMapping("/error")
-	public ResponseEntity<?> login(@RequestBody Object error){
-		System.out.println("Message: "+error.toString());
+	public ResponseEntity<?> loginError(@RequestBody Object error){
+		System.out.println("\n\n\n\nMessage: "+error.toString());
 		//System.out.println("password: "+error.toString());
-		
-		return new ResponseEntity<>(error,HttpStatus.UNAUTHORIZED);
+		return null;
+		//return new ResponseEntity<>(error,HttpStatus.UNAUTHORIZED);
 		
 	}
 

@@ -80,14 +80,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 
 	}
 	
-	  @Bean
-	  CorsConfigurationSource corsConfigurationSource() {
-	    final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-	    CorsConfiguration corsConfig = new CorsConfiguration();
-	    corsConfig.applyPermitDefaultValues();
-	    corsConfig.setExposedHeaders(Arrays.asList("Authorization"));
-	    source.registerCorsConfiguration("/**", corsConfig);
-	    return source;
-	  }
+//	  @Bean
+//	  CorsConfigurationSource corsConfigurationSource() {
+//	    final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+//	    CorsConfiguration corsConfig = new CorsConfiguration();
+//	    corsConfig.applyPermitDefaultValues();
+//	    corsConfig.setExposedHeaders(Arrays.asList("Authorization"));
+//	    source.registerCorsConfiguration("/**", corsConfig);
+//	    return source;
+//	  }
 
 }
